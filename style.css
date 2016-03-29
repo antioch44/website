@@ -188,7 +188,8 @@ main {
   padding: 2em 0 2em 0; }
   @media screen and (max-width: 768px) {
     main {
-      padding: 1em 0; } }
+      padding: 1em 0;
+      margin-bottom: 2rem; } }
 
 .line-container {
   overflow: hidden;
@@ -419,10 +420,18 @@ footer {
     display: table; }
   footer p {
     margin: 0 auto;
-    width: auto; }
+    width: auto;
+    line-height: 1.4em; }
+  @media screen and (max-width: 768px) {
+    footer span {
+      display: block;
+      padding: 0.25em 0; } }
   footer span.divider {
     padding-left: 0.5rem;
     padding-right: 0.5rem; }
+    @media screen and (max-width: 768px) {
+      footer span.divider {
+        display: none; } }
   footer a {
     color: #888; }
     footer a:hover, footer a:active {
