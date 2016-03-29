@@ -95,29 +95,31 @@ html {
       display: none; }
     #rs-common-nav nav * {
       display: block; } }
-  #rs-common-nav nav ul {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height .25s linear; }
+  @media screen and (max-width: 768px) {
+    #rs-common-nav nav ul {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .25s linear; } }
+  @media screen and (max-width: 768px) {
     #rs-common-nav nav ul li {
       visibility: hidden;
-      transition: visibility .25s linear; }
+      transition: visibility .25s linear; } }
+  #rs-common-nav nav ul li a {
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 48px;
+    border-bottom: 2px solid #111; }
+    @media screen and (max-width: 768px) {
       #rs-common-nav nav ul li a {
-        padding-left: 10px;
-        padding-right: 10px;
-        line-height: 48px;
-        border-bottom: 2px solid #111; }
-        @media screen and (max-width: 768px) {
-          #rs-common-nav nav ul li a {
-            border-bottom: 1px solid #333;
-            text-align: center; }
-            #rs-common-nav nav ul li a:hover, #rs-common-nav nav ul li a:active {
-              padding-left: 0.5rem;
-              border-left: 2px solid #FF4B03;
-              border-top-color: #333; } }
-      @media screen and (max-width: 768px) {
-        #rs-common-nav nav ul li:first-of-type a {
-          border-top: 1px solid #333; } }
+        border-bottom: 1px solid #333;
+        text-align: center; }
+        #rs-common-nav nav ul li a:hover, #rs-common-nav nav ul li a:active {
+          padding-left: 0.5rem;
+          border-left: 2px solid #FF4B03;
+          border-top-color: #333; } }
+  @media screen and (max-width: 768px) {
+    #rs-common-nav nav ul li:first-of-type a {
+      border-top: 1px solid #333; } }
   #rs-common-nav nav.open ul {
     max-height: 800px; }
   #rs-common-nav nav.open li {
