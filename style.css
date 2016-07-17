@@ -215,8 +215,10 @@ main {
 
 .section-wrapper {
   width: 100%; }
-  .section-wrapper.bg-efefef {
+  .section-wrapper.community {
     background-color: #efefef; }
+  .section-wrapper.sponsors {
+    background-color: #fff; }
   .section-wrapper section {
     padding: 3rem 0 1.5rem 0; }
     .section-wrapper section .head {
@@ -379,39 +381,73 @@ section {
       margin-bottom: 1rem; }
     section#explainer-protocol .item p {
       margin-bottom: 1rem; }
-  section#community article {
+  section#community {
+    margin-bottom: 0; }
+    section#community article {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      padding-right: 1rem;
+      margin-bottom: 2.5rem; }
+      section#community article:last-child {
+        margin-right: 0; }
+      section#community article:nth-child(2n) {
+        margin-right: 0; }
+      section#community article:nth-child(2n+1) {
+        clear: left; }
+      section#community article::after {
+        clear: both;
+        content: "";
+        display: table; }
+      @media screen and (max-width: 768px) {
+        section#community article {
+          float: left;
+          display: block;
+          margin-right: 7.42297%;
+          width: 100%; }
+          section#community article:last-child {
+            margin-right: 0; } }
+      section#community article h4 {
+        font-size: 1rem;
+        margin-bottom: 1rem; }
+      section#community article i {
+        float: left;
+        font-size: 1.5rem; }
+      section#community article .description {
+        margin-left: 50px; }
+  section#sponsors .item {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%;
-    margin-bottom: 2.5em;
-    padding-right: 1rem; }
-    section#community article:last-child {
+    width: 23.23176%;
+    text-align: center;
+    padding: 0 20px; }
+    section#sponsors .item:last-child {
       margin-right: 0; }
-    section#community article:nth-child(2n) {
-      margin-right: 0; }
-    section#community article:nth-child(2n+1) {
-      clear: left; }
-    section#community article::after {
-      clear: both;
-      content: "";
-      display: table; }
     @media screen and (max-width: 768px) {
-      section#community article {
+      section#sponsors .item {
         float: left;
         display: block;
         margin-right: 7.42297%;
-        width: 100%; }
-        section#community article:last-child {
+        width: 100%;
+        margin-bottom: 2rem; }
+        section#sponsors .item:last-child {
           margin-right: 0; } }
-    section#community article h4 {
-      font-size: 1rem;
-      margin-bottom: 1rem; }
-    section#community article i {
-      float: left;
-      font-size: 1.5rem; }
-    section#community article .description {
-      margin-left: 50px; }
+    section#sponsors .item a {
+      display: block;
+      height: 96px;
+      line-height: 96px; }
+    section#sponsors .item img {
+      vertical-align: middle;
+      max-width: 90%;
+      max-height: 96px; }
+      @media screen and (max-width: 768px) {
+        section#sponsors .item img {
+          width: 100%; } }
+    section#sponsors .item.whs img {
+      max-width: 70%;
+      max-height: 128px; }
 
 footer {
   max-width: 68em;
