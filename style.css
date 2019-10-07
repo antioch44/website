@@ -347,9 +347,9 @@ section {
       section#explainer-unhosted .item p {
         font-size: 0.8rem; }
         section#explainer-unhosted .item p .developer {
-          color: red; }
+          color: #f0590c; }
         section#explainer-unhosted .item p .user {
-          color: green; }
+          color: #248ef4; }
   section#explainer-protocol .row {
     margin-bottom: 2rem; }
   section#explainer-protocol figure {
